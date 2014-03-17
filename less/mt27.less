@@ -1,0 +1,354 @@
+body{
+background: #fff;
+}
+.content{
+	width:100%;
+	min-width:500px;
+	height:100%;
+	min-height:800px;
+}
+@screen_width:360px;
+@ration:856/480;
+@screen_height:( @ration * @screen_width);
+@radius_num:12px;
+.phone{
+	width:@screen_width;
+	height:@screen_height;
+	margin:auto;
+	.screen-out{
+		position: relative;
+		padding:3px;
+		border-radius: 12px;
+		border: 1px solid #000;
+		background:#000;
+	}
+	.screen-mid{
+		padding:3px;
+		border-radius: 10px;
+		border: 6px solid #272828;
+		background:#000;
+	}
+	.screen-top{
+			height:@screen_height*0.1;
+			.header-tip{
+				position: absolute;
+				width: 60px;
+				height: 10px;
+				padding: 6px 6px 0 6px;
+				overflow: hidden;
+				left: 137px;
+				top: 25px;
+				border-radius: 50px;
+				background: -webkit-linear-gradient(top, rgba(20,20,21,0.3), rgba(65,65,65,0.1));
+				background: linear-gradient(to bottom, rgba(20,20,21,0.3), rgba(65,65,65,0.1));
+				box-shadow: 0 1px 0 rgba(255,255,255,0.3),0 -1px 0 rgba(0,0,0,0.3);
+				z-index: 10;
+			}
+
+			.light1{
+				position: absolute;
+				width: 17px;
+				height: 17px;
+				left: 237px;
+				top: 25px;
+				overflow: hidden;
+				z-index: 1000;
+				border-radius: 20px;
+				background: -webkit-radial-gradient(35% 35%, ellipse closest-side, rgba(26,26,27,0.1), rgba(44,43,45,0.1) 300%);
+				background: radial-gradient(35% 35%, ellipse closest-side, rgba(26,26,27,0.1), rgba(44,43,45,0.1) 300%);
+				box-shadow: inset 0 0 3px 1px rgba(255,255,255,0.05),inset 1px 1px 2px rgba(0,0,0,0.2),inset -2px -2px 1px rgba(255,255,255,0.07);
+
+			}
+			.light1:after{
+				content: '';
+				position: absolute;
+				display: block;
+				width: 7px;
+				height: 7px;
+				top: 5px;
+				left: 5px;
+				border-radius: 10px;
+				background: -webkit-radial-gradient(35% 35%, ellipse closest-side, rgba(5,29,49,0.5), rgba(43,93,144,0.5) 300%);
+				background: radial-gradient(35% 35%, ellipse closest-side, rgba(5,29,49,0.5), rgba(43,93,144,0.5) 300%);
+				box-shadow: 0 0 0 3px rgba(0,0,0,0.01);
+			}
+			.light2{
+			position: absolute;
+				width: 17px;
+				height: 17px;
+				left: 263px;
+				top: 25px;
+				overflow: hidden;
+				z-index: 1000;
+			}
+			.light2:after{
+				content: '';
+				position: absolute;
+				display: block;
+				width: 7px;
+				height: 7px;
+				top: 5px;
+				left: 5px;
+				border-radius: 10px;
+				background: -webkit-radial-gradient(35% 35%, ellipse closest-side, rgba(5,29,49,0.5), rgba(43,93,144,0.5) 300%);
+				background: radial-gradient(35% 35%, ellipse closest-side, rgba(5,29,49,0.5), rgba(43,93,144,0.5) 300%);
+				box-shadow: 0 0 0 3px rgba(0,0,0,0.01);
+			}
+
+			.sony-logo{
+				 font-family:"Times New Roman";
+				 color:#fff;
+				 font-size:30px;
+				 position:absolute;
+				 top: 41px;
+				left: 133px;
+			}
+		}
+	.phone-screen{
+		height:@screen_height*0.85;
+
+		overflow: hidden;
+		z-index: 2;
+
+		padding: 0px 22px;
+		background:#000;
+		.phone-screen-content{
+			width:100%;
+			height:100%;
+			background:#f2f2f2;
+			.screen-top-tip{
+				background:#242424;
+				height:18px;
+				position:relative;
+
+				.wifi{
+					top: -15px;
+					left: 126px;
+					width: 25px;
+					height: 25px;
+					-webkit-transform: rotate(45deg);
+					-moz-transform: rotate(45deg);
+					-ms-transform: rotate(45deg);
+					-o-transform: rotate(45deg);
+					transform: rotate(45deg);
+					overflow: hidden;
+					position: absolute;
+					border-radius: 1px;
+				}
+				.wifi-hack{
+
+					position: absolute;
+					left: 22px;
+					top: 22px;
+					width: 4px;
+					height: 4px;
+					border-radius: 3px;
+					background: #c6c6c6;
+					z-index: 6;
+
+				}
+				.wifi:before {
+					content: '';
+					top: 17px;
+					left: 17px;
+					width: 10px;
+					height: 10px;
+					overflow: hidden;
+					position: absolute;
+					border-radius: 20px;
+					border: 2px #c6c6c6 solid;
+				}
+				.wifi:after {
+					content: '';
+					top: 12px;
+					left: 12px;
+					width: 20px;
+					height: 20px;
+					overflow: hidden;
+					position: absolute;
+					border-radius: 20px;
+					border: 2px #c6c6c6 solid;
+				}
+
+				.net{
+					position: absolute;
+					top: 3px;
+					left: 152px;
+					width: 19px;
+					height: 12px;
+					overflow: hidden;
+				}
+				.net:after{
+
+					content: '';
+					position: absolute;
+					right: 0;
+					top: 0;
+					display: block;
+					width: 3px;
+					height: 12px;
+					background: #c6c6c6;
+					box-shadow: #c6c6c6 -4px 3px 0, #c6c6c6 -8px 6px 0, #c6c6c6 -12px 9px 0;
+				}
+
+				.power{
+					position: absolute;
+					height: 8px;
+					width: 18px;
+					border: 1px solid #c6c6c6;
+					border-radius: 1px;
+					right: 85px;
+					top: 4px;
+					
+
+				}
+
+				.power:before {
+					content: '';
+					position: absolute;
+					height: 2px;
+					width: 1px;
+					border: 1px solid #c6c6c6;
+					background:#c6c6c6;
+					left: -3px;
+					top: 2px;
+					
+				}
+				.power:after {
+					content: '';
+					position: absolute;
+					height: 6px;
+					width: 16px;
+					background:green;
+					left: 1px;
+					top: 1px;
+				}
+
+				.time{
+					color:#c6c6c6;
+					font-size:10px;
+					position:absolute;
+					font-weight:bold;
+
+					letter-spacing:-2px;
+					right:19px;
+					top:2px;
+
+				}
+			}
+		}
+	}
+	.screen-bottom{
+					height:@screen_height*0.1;
+					position:relative;
+					.return-change{
+						position: absolute;
+						height: 8px;
+						width: 18px;
+						border: 1px solid #c6c6c6;
+						border-left:0px;
+						border-top-right-radius: 3px;
+						border-bottom-right-radius: 3px;
+						left: 47px;
+						top: 26px;
+						
+
+					}
+
+					.return-change:before {
+						content: '';
+						position: absolute;						
+						left: -3px;
+						top: -3px;
+						border-bottom: 3px solid transparent;
+						border-top: 3px solid transparent;
+						border-right: 10px solid #c6c6c6;
+						
+					}
+
+					.menu-botton{
+						position: absolute;
+						top: 23px;
+						right: 52px;
+						width: 15px;
+						height: 12px;
+						overflow: hidden;
+					}
+					.menu-botton:after{
+
+						content: '';
+						position: absolute;
+						right: 0;
+						top: 0;
+						display: block;
+						width: 15px;
+						height: 1px;
+						background: #c6c6c6;
+						box-shadow: #c6c6c6 2px 3px 0, #c6c6c6 2px 6px 0, #c6c6c6 2px 9px 0,#c6c6c6 2px 12px 0;
+					}
+
+					.home-botton{
+						position: absolute;
+						height: 18px;
+						width: 18px;
+						border: 2px solid #c6c6c6;
+						border-bottom:0px;
+						border-top:0px;
+						left: 147px;
+						top: 26px;
+						.home-botton-inner{
+							position: absolute;
+							height: 10px;
+							width: 6px;
+							border: 2px solid #c6c6c6;
+							border-bottom:0px;
+							left: 4px;
+							top: 7px;							
+						}
+						.home-botton-inner:before{
+							content: '';
+							position: absolute;						
+							left: -7px;
+							top: 8px;
+							width: 6px;
+							height: 2px;
+							border-top:2px solid #c6c6c6;
+						}
+						.home-botton-inner:after{
+							content: '';
+							position: absolute;						
+							right: -7px;
+							top: 8px;
+							width: 6px;
+							height: 2px;
+							border-top:2px solid #c6c6c6;
+						}											
+					}
+					.home-botton:before{
+						content: '';
+						position: absolute;						
+						left: -2px;
+						top: -7px;
+						width:19px;
+						height:19px;
+						border-top:2px solid #c6c6c6;
+						border-right:2px solid #c6c6c6;
+						-webkit-transform: rotate(315deg);
+						-moz-transform: rotate(315deg);
+						-ms-transform: rotate(315deg);
+						-o-transform: rotate(315deg);
+						transform: rotate(315deg);
+						overflow: hidden;				
+					}
+
+					
+				}
+
+	.phone-bottom{
+		height:@screen_height*0.14;
+		border-radius: 12px;
+		background:red;
+		margin-top: -(@radius_num*1.8);
+	}
+}
+
